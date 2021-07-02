@@ -1,0 +1,54 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_silver_wings"
+		texturefile = "gfx/interface/traits/trait_silver_wings.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_mage_officer"
+		texturefile = "gfx/interface/traits/trait_mage_officer.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_mage_leader"
+		texturefile = "gfx/interface/traits/trait_mage_leader.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_communist_sympathizer"
+		texturefile = "gfx/interface/traits/personal/trait_communist_sympathizer.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_neutrality_sympathizer"
+		texturefile = "gfx/interface/traits/personal/trait_neutrality_sympathizer.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_monarchist_sympathizer"
+		texturefile = "gfx/interface/traits/personal/trait_monarchist_sympathizer.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_democratic_sympathizer"
+		texturefile = "gfx/interface/traits/personal/trait_democratic_sympathizer.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_fascist_sympathizer"
+		texturefile = "gfx/interface/traits/personal/trait_fascist_sympathizer.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_anti_fascist"
+		texturefile = "gfx/interface/traits/personal/trait_anti_fascist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_anti_democrat"
+		texturefile = "gfx/interface/traits/personal/trait_anti_democrat.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_anti_monarchist"
+		texturefile = "gfx/interface/traits/personal/trait_anti_monarchist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_anti_neutral"
+		texturefile = "gfx/interface/traits/personal/trait_anti_neutral.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_anti_communist"
+		texturefile = "gfx/interface/traits/personal/trait_anti_communist.dds"
+	}
+}

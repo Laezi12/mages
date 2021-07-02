@@ -1,0 +1,274 @@
+leader_traits = {
+
+	silver_wings = { 
+		type = all
+		allowed = {
+			always = yes # not gainable
+		}
+		cost = 1000
+		modifier = {
+			army_morale_factor = 0.10 
+			combat_width_factor = -0.1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	mage_officer = { 
+		type = land
+		trait_type = personality_trait
+		
+		trait_xp_factor = {
+			mage_leader = 1     #+100%
+		}
+		
+		attack_skill_factor = 1
+		defense_skill_factor = 1
+	}
+	
+	mage_leader = {
+ 		type = corps_commander
+		gain_xp = {
+			set_temp_variable = { temp = num_battalions }
+			multiply_temp_variable = { temp = 0.2 }
+			check_variable = { num_battalions_with_type@mages > temp }
+		}
+		custom_gain_xp_trigger_tooltip = mage_battalion_ratio_over_20
+		cost = 800
+		modifier = {
+			modifier_army_sub_unit_mages_attack_factor = 0.1
+			modifier_army_sub_unit_mages_defence_factor = 0.1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		gui_row = -1
+	}
+
+	###################################################
+	#Having specific traits to be pro- and anti- 
+	#each ideology violates the KISS principle.
+	#Too bad!
+	#
+	#Basically, a communist sympathizer will always
+	#defect to a communist government in a civil war,
+	#while remaining with the original government in
+	#all other circumstances.
+	#
+	#Meanwhile, an anti-communist will always defect
+	#away from a communist government while remaining
+	#with the original government in all other cases.
+	#
+	#This means that if a single trait were to be used,
+	#like for example, making Tanya have the 'single
+	#monarchist' trait, that Tanya would defect to the
+	#rebellion even if the new government was democratic,
+	#an ideology she would have no problem with.
+	#
+	#Because of this, the traits must be split.
+	#
+	#I hate it and wish it was simpler.
+	#
+	#To use these in a civil war, see scripted triggers.
+	#nevermind that, it's all been handled by on_actions
+	####################################################
+	communist_sympathizer = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		show_in_combat = no
+		new_commander_weight = {
+			factor = 0
+		}
+		allowed = {
+			NOT = {
+				OR = {
+					#does this even do anything when its a personality trait
+					has_trait = anti_communist
+					has_trait = monarchist_sympathizer
+					has_trait = fascist_sympathizer
+					has_trait = democratic_sympathizer
+					has_trait = neutrality_sympathizer
+				}			
+			}
+		}
+	}
+	monarchist_sympathizer = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		show_in_combat = no
+		new_commander_weight = {
+			factor = 0
+		}
+		allowed = {
+			NOT = {
+				OR = {
+					has_trait = anti_monarchist
+					has_trait = communist_sympathizer
+					has_trait = fascist_sympathizer
+					has_trait = democratic_sympathizer
+					has_trait = neutrality_sympathizer
+				}			
+			}
+		}
+	}
+	fascist_sympathizer = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		show_in_combat = no
+		new_commander_weight = {
+			factor = 0
+		}
+		allowed = {
+			NOT = {
+				OR = {
+					has_trait = anti_fascist
+					has_trait = communist_sympathizer
+					has_trait = monarchist_sympathizer
+					has_trait = democratic_sympathizer
+					has_trait = neutrality_sympathizer
+				}			
+			}
+		}
+	}
+	democratic_sympathizer = {
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		show_in_combat = no
+		new_commander_weight = {
+			factor = 0
+		}
+		allowed = {
+			NOT = {
+				OR = {
+					has_trait = anti_democrat
+					has_trait = communist_sympathizer
+					has_trait = monarchist_sympathizer
+					has_trait = fascist_sympathizer
+					has_trait = neutrality_sympathizer
+				}			
+			}
+		}
+	}
+	neutrality_sympathizer = { 
+	#despicable.
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+		show_in_combat = no
+		allowed = {
+			NOT = {
+				OR = {
+					has_trait = anti_neutral
+					has_trait = communist_sympathizer
+					has_trait = monarchist_sympathizer
+					has_trait = fascist_sympathizer
+					has_trait = democratic_sympathizer
+				}			
+			}
+		}
+	}
+
+	anti_communist = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+		show_in_combat = no
+		allowed = {
+			NOT = {
+					#you can hate as many ideologies as you want even though you can only like one
+					has_trait = communist_sympathizer
+			}			
+		}		
+	}
+	anti_monarchist = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+		show_in_combat = no
+		allowed = {
+			NOT = {
+					has_trait = monarchist_sympathizer
+			}			
+		}			
+	}
+	anti_fascist = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+		show_in_combat = no
+		allowed = {
+			NOT = {
+					has_trait = fascist_sympathizer
+			}			
+		}	
+	}
+	anti_democrat = {
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+		show_in_combat = no
+		allowed = {
+			NOT = {
+					has_trait = democratic_sympathizer
+			}			
+		}	
+	}
+	anti_neutral = { 
+	#hey look its 90% of people on the internet
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+		show_in_combat = no
+		allowed = {
+			NOT = {
+					has_trait = neutrality_sympathizer
+			}			
+		}
+	}
+}

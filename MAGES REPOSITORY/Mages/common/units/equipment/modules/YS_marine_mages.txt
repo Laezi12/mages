@@ -1,0 +1,21 @@
+equipment_modules = {
+
+	ship_marine_mage_1 = {
+		category = ship_marine_mage
+		
+		add_stats = {
+			anti_air_attack = 3
+			surface_detection = 10
+			sub_detection = 5
+			build_cost_ic = 1000
+		}
+		multiply_stats = {
+			naval_speed = -0.01
+		}
+		
+		can_convert_from = {
+			module_category = ship_marine_mage
+			convert_cost_ic = 100
+		}
+	}
+#} #This is intentional. The engine appends a } for whatever reason, and leaving it here would cause an error

@@ -1,0 +1,140 @@
+spriteTypes = {	
+	
+	### Generic Mage Equipment ###
+
+	SpriteType = {
+		name = "GFX_tech_orb_medium"
+		texturefile = "gfx/interface/technologies/GER_mage_equipment_1.dds" #placeholder
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_orb2_medium"
+		texturefile = "gfx/interface/technologies/EMP_mage_equipment_1.dds" #placeholder
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_orb3_medium"
+		texturefile = "gfx/interface/technologies/EMP_mage_equipment_1.dds" #placeholder
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_orb4_medium"
+		texturefile = "gfx/interface/technologies/EMP_mage_equipment_2.dds" #placeholder
+	}
+	
+	### Empire Mage Equipment ###
+
+	SpriteType = {
+		name = "GFX_EMP_tech_orb_medium"
+		texturefile = "gfx/interface/technologies/EMP_mage_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_EMP_tech_orb2_medium"
+		texturefile = "gfx/interface/technologies/EMP_mage_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_EMP_tech_orb3_medium"
+		texturefile = "gfx/interface/technologies/EMP_mage_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_EMP_tech_orb4_medium"
+		texturefile = "gfx/interface/technologies/EMP_mage_equipment_2.dds"
+	}
+
+	### Republic Mage Equipment ###
+
+	SpriteType = {
+		name = "GFX_REP_tech_orb_medium"
+		texturefile = "gfx/interface/technologies/REP_mage_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_REP_tech_orb2_medium"
+		texturefile = "gfx/interface/technologies/REP_mage_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_REP_tech_orb3_medium"
+		texturefile = "gfx/interface/technologies/REP_mage_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_REP_tech_orb4_medium"
+		texturefile = "gfx/interface/technologies/REP_mage_equipment_1.dds"
+	}
+	
+	### Mage Technologies ###
+
+	SpriteType = {
+		name = "GFX_tech_mage_speed1_medium"
+		texturefile = "gfx/interface/technologies/infantry_offensive.dds" #placeholder
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_mage_speed2_medium"
+		texturefile = "gfx/interface/technologies/mechanised_offensive.dds" #placeholder
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_mage_speed3_medium"
+		texturefile = "gfx/interface/technologies/air_land_battle.dds" #placeholder
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_mage_entrenchment1_medium"
+		texturefile = "gfx/interface/technologies/prepared_defense.dds" #placeholder
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_mage_hardness1_medium"
+		texturefile = "gfx/interface/technologies/intergrated_support.dds" #placeholder
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_mage_hardness2_medium"
+		texturefile = "gfx/interface/technologies/combined_arms.dds" #placeholder
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_mage_anti_air1_medium"
+		texturefile = "gfx/interface/technologies/air_superiority.dds" #placeholder
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_marine_mage1_medium"
+		texturefile = "gfx/interface/technologies/marines.dds" #placeholder
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_marine_mage2_medium"
+		texturefile = "gfx/interface/technologies/marines2.dds" #placeholder
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_para_mage1_medium"
+		texturefile = "gfx/interface/technologies/paratroopers.dds" #placeholder
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_para_mage2_medium"
+		texturefile = "gfx/interface/technologies/paratroopers2.dds" #placeholder
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+﻿division_template = {
+	name = "Marine Mages"
+
+	regiments = {
+		mages = { x = 0 y = 0 }
+		mages = { x = 0 y = 1 }
+		mages = { x = 0 y = 2 }
+        marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+
+}

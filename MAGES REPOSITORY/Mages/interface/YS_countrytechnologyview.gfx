@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_mage_techtree_bg"
+		textureFile = "gfx//interface//techtree//mage_techtree_bg.dds"
+	}	
+}

@@ -1,0 +1,49 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_nato_unit_mages_icon_small"
+		texturefile = "gfx/texticons/nato_unit_mages_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+	
+	spriteType = {
+		name = "GFX_unit_mages_icon_small"
+		texturefile = "gfx/texticons/unit_mages_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}	
+	
+	spriteType = {
+		name = "GFX_nato_unit_mage_spotters_icon_small"
+		texturefile = "gfx/texticons/nato_unit_mages_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+	
+	spriteType = {
+		name = "GFX_unit_mage_spotters_icon_small"
+		texturefile = "gfx/texticons/unit_mage_recon_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	
+	spriteType = {
+		name = "GFX_nato_unit_cav_artillery_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_cav_artillery_brigade_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	
+	spriteType = {
+		name = "GFX_unit_cav_artillery_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_cav_artillery_brigade_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	
+	spriteType = {
+		name = "GFX_unit_category_recon_icon_small"
+		texturefile = "gfx/texticons/unit_recon_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}	
+}

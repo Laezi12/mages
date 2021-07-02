@@ -1,0 +1,6 @@
+﻿l_english:
+ modifier_army_sub_unit_mages_attack_factor:0 "Mage Attack"
+ modifier_army_sub_unit_mages_defence_factor: "Mage Defense"
+ modifier_army_sub_unit_mages_speed_factor:0 "Mage Speed"
+ modifier_army_sub_unit_cavalry_speed_factor:0 "Cavalry Speed"
+ monarchism_drift:0 "Daily Monarchism Support"
