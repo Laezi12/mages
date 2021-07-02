@@ -5,7 +5,7 @@ mage_generic = {
 	}
 	
 	upgrade_prio = {
-		factor = 3
+		factor = 5
 
 		modifier = {
 			factor = 5
@@ -22,23 +22,24 @@ mage_generic = {
 
 	mage_default = {
 		upgrade_prio = {
-			factor = 2
+			factor = 5
 
 			modifier = {
 				factor = 5
+				is_major = yes
 			}
 		}
 		
 		production_prio = {
-			factor = 2
+			factor = 5
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				should_train_mages = yes
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				is_major = yes
 			}
 
@@ -139,11 +140,11 @@ mage_generic = {
 				mage_spotters = 1
 				artillery = 1
 				engineer = 1
+				recon = 1
 			}
 			
 			regiments = {
-				mages = 5
-				motorized = 5
+				mages = 8
 			}
 		}
 		

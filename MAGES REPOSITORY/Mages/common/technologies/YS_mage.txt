@@ -79,7 +79,7 @@ technologies = {
 			
 			modifier = {
 				factor = 10
-				date > "1921.1.1"
+				date > "1939.1.1"
 				should_train_mages = yes
 			}
 		}
@@ -121,13 +121,13 @@ technologies = {
 			}
 			
 			modifier = {
-				factor = 5
+				factor = 10
 				should_train_mages = yes
 			}
 			
 			modifier = {
 				factor = 10
-				date > "1921.1.1"
+				date > "1939.1.1"
 				should_train_mages = yes
 			}
 		}
@@ -161,7 +161,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 5
 			
 			modifier = {
 				factor = 10
@@ -169,7 +169,7 @@ technologies = {
 			}
 			
 			modifier = {
-				factor = 5
+				factor = 10
 				should_train_mages = yes
 			}
 			
@@ -199,15 +199,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 5
 			
 			modifier = {
-				factor = 5
+				factor = 25
 				is_major = yes
 			}
 			
 			modifier = {
-				factor = 5
+				factor = 10
 				should_train_mages = yes
 			}
 		}
@@ -238,7 +238,7 @@ technologies = {
 			factor = 5
 			
 			modifier = {
-				factor = 4
+				factor = 5
 				is_major = yes
 			}
 			
@@ -249,7 +249,7 @@ technologies = {
 			
 			modifier = {
 				factor = 10
-				date > "1921.1.1"
+				date > "1939.1.1"
 				should_train_mages = yes
 			}
 		}
@@ -277,15 +277,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 5
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				is_major = yes
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 10
 				should_train_mages = yes
 			}
 		}
@@ -308,7 +308,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 4
 			
 			modifier = {
 				factor = 2
@@ -316,7 +316,7 @@ technologies = {
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 10
 				should_train_mages = yes
 			}
 		}
@@ -339,21 +339,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 4
 			
 			modifier = {
-				factor = 2
+				factor = 10
 				is_major = yes
 			}
 			
 			modifier = {
-				factor = 5
+				factor = 10
 				should_train_mages = yes
 			}
 			
 			modifier = {
 				factor = 10
-				date > "1921.1.1"
+				date > "1939.1.1"
 				should_train_mages = yes
 			}
 		}
@@ -384,12 +384,12 @@ technologies = {
 			factor = 1
 			
 			modifier = {
-				factor = 4
+				factor = 10
 				is_major = yes
 			}
 			
 			modifier = {
-				factor = 5
+				factor = 10
 				should_train_mages = yes
 			}
 			
@@ -418,10 +418,10 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 5
 			
 			modifier = {
-				factor = 2
+				factor = 10
 				should_train_mages = yes
 			}
 		}
@@ -492,7 +492,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 5
+
+			modifier = {
+				factor = 10
+				should_train_mages = yes
+			}
 		}
 	}
 	
@@ -528,7 +533,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
 	}
 	
@@ -572,7 +577,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
 	}
 	
@@ -600,7 +605,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
 	}
 }
