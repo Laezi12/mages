@@ -33,7 +33,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 1
 		
-		build_cost_ic = 8
+		build_cost_ic = 6.5
 		resources = {
 			steel = 3
 			aluminium = 1
@@ -76,7 +76,7 @@ equipments = {
 		ap_attack = 15
 		air_attack = 5
 
-		build_cost_ic = 10.5
+		build_cost_ic = 9
 	}
 
 	# Improved Mage Suits ~1923
@@ -100,7 +100,7 @@ equipments = {
 		ap_attack = 20
 		air_attack = 8
 		
-		build_cost_ic = 13.5
+		build_cost_ic = 12
 		resources = {
 			steel = 3
 			aluminium = 2
@@ -130,7 +130,7 @@ equipments = {
 		air_attack = 10
 		
 		#reliability = 0.95
-		build_cost_ic = 16.5
+		build_cost_ic = 15
 		resources = {
 			steel = 4
 			aluminium = 2

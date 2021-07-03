@@ -1,0 +1,86 @@
+add_namespace = magic
+
+country_event = {
+	id = magic.0
+	title = magic.0.t
+	picture = GFX_report_event_british_inspect_troops
+	is_triggered_only = no
+	fire_only_once = yes
+	desc = magic.0.d
+
+	trigger = {
+		original_tag = GER
+		has_government = neutrality
+		date > 1939.1.1
+		has_tech = tech_orb
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+
+
+	option = { #we will welcome this new mage unit under the kaiserin!
+		trigger = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Wilhelm II"
+			}
+		}
+		name = magic.0.a
+		hidden_effect = {
+			load_oob = elite_mage
+		}
+		add_war_support = 0.1
+		GER = {
+			create_corps_commander = {
+				name = "Victoria Louise"
+				portrait_path = "gfx/leaders/GER/portrait_ger_victoria_louise.dds"
+				traits = { trickster mage_officer }
+				female = yes
+				id = 8000
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 4
+			}
+		}
+	}
+
+	option = { #we will welcome this new mage unit but the kaiserin shall stay sheltered
+		name = magic.0.b
+		hidden_effect = {
+			load_oob = elite_mage
+		}
+		add_political_power = 50
+	}
+
+	option = { #we will welcome this new mage unit under the kaiserin!
+		trigger = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Victoria"
+			}
+		}
+		name = magic.0.c
+		hidden_effect = {
+			load_oob = elite_mage
+		}
+		add_war_support = 0.1
+		GER = {
+			create_corps_commander = {
+				name = "Victoria Louise"
+				portrait_path = "gfx/leaders/GER/portrait_ger_victoria_louise.dds"
+				traits = { trickster mage_officer }
+				female = yes
+				id = 8000
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 4
+			}
+		}
+	}
+}

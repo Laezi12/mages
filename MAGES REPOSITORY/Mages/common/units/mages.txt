@@ -34,7 +34,7 @@ sub_units = {
 		manpower = 900
 
 		#Misc Abilities
-		training_time = 240
+		training_time = 210
 		suppression = 1.5
 		weight = 0.5
 		
@@ -50,7 +50,7 @@ sub_units = {
 		}
 
 		need = {
-			infantry_equipment = 100
+			infantry_equipment = 180
 			mage_equipment = 36
 		}
 
